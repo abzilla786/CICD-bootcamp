@@ -23,3 +23,4 @@
 #### Generate new ssh keys
 ssh-keygen -t rsa -b 4096 -C "abs@githubemail.com"
 
+reference for complete basic github jenkins integration: https://www.blazemeter.com/blog/how-to-integrate-your-github-repository-to-your-jenkins-project
