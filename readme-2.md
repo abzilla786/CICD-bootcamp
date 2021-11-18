@@ -81,4 +81,14 @@ Step 14: You can see that Jenkins was able to pull the test and run it!
 
 pull a script from github and run it
 Congratulations! Every time you publish your changes to Github, GitHub will trigger your new Jenkins job.
-.
+
+#### Jenkins commands for running aws
+```
+ssh -A -o "devopsbootcamp.pem" ubuntu@ec2-18-202-31-157.eu-west-1.compute.amazonaws.com
+sudo apt-get update
+sudo apt-get upgrade
+scp -i app ubuntu@ec2-18-202-31-157.eu-west-1.compute.amazonaws.com:~/home/ubuntu/app
+cd app
+npm install
+npm test
+```
