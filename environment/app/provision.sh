@@ -19,14 +19,14 @@ sudo apt-get install nodejs -y
 sudo npm install pm2 -g
 
 #Creates a environment variable and stores in .bashrc file
-sudo echo 'export DB_HOST="mongodb://18.203.171.28:27017/posts"' >> .bashrc
+sudo echo 'export DB_HOST="mongodb://18.203.171.28:27017/posts"' >> ~/.bashrc
 source ~/.bashrc
 
 sudo apt-get install nginx -y
 
 # remove the old file and add our one
 sudo rm /etc/nginx/sites-available/default
-sudo cp /home/ubuntu/environment/nginx.default /etc/nginx/sites-available/default
+sudo cp /home/ubuntu/CICD-bootcamp/environment/nginx.default /etc/nginx/sites-available/default
 
 # finally, restart the nginx service so the new config takes hold
 sudo service nginx restart

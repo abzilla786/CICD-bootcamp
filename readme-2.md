@@ -25,9 +25,8 @@ ssh-keygen -t rsa -b 4096 -C "abs@githubemail.com"
 
 reference for complete basic github jenkins integration: https://www.blazemeter.com/blog/how-to-integrate-your-github-repository-to-your-jenkins-project
 
-Configuring GitHub
+#### Configuring GitHub
  
-
 Step 1: go to your GitHub repository and click on ‘Settings’.
 
 integrating jenkins and github
@@ -51,7 +50,7 @@ Configuring Jenkins
 
 Step 5: In Jenkins, click on ‘New Item’ to create a new project.
 
-jenkins configuration for github
+#### jenkins configuration for github
 
 Step 6: Give your project a name, then choose ‘Freestyle project’ and finally, click on ‘OK’.
 
