@@ -9,7 +9,7 @@ sudo apt-get upgrade -y
 sudo apt-get install -y mongodb-org=3.2.20 mongodb-org-server=3.2.20 mongodb-org-shell=3.2.20 mongodb-org-mongos=3.2.20 mongodb-org-tools=3.2.20
 
 # remoe the default .conf and replace with our configuration
-sudo rm /etc/mongod.conf
+sudo rm  -rf /etc/mongod.conf
 sudo ln -s /home/ubuntu/environment/mongod.conf /etc/mongod.conf
 
 # if mongo is is set up correctly these will be successful
